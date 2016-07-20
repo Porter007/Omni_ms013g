@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.msm8226
 
+# TWRP
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
